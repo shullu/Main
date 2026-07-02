@@ -525,7 +525,9 @@ export const stats = {
   activeMatters: matters.filter((m) => m.status !== "closed").length,
   billableHours: 186,
   hearings: matters.filter((m) => m.nextHearing).length,
-  outstanding: 312500, // AED
+  // Derived from the same invoice data the Billing page uses, so the
+  // dashboard and billing views never show conflicting figures.
+  outstanding: billingStats.outstanding, // AED
 };
 
 export function formatAED(n: number, lang: "en" | "ar") {

@@ -90,6 +90,25 @@ export function Shell({ children }: { children: ReactNode }) {
             </div>
           </div>
         </header>
+        <nav className="flex gap-1 overflow-x-auto border-b border-sand-200 bg-white px-3 py-2 md:hidden">
+          {nav.map((n) => {
+            const active = n.href === "/" ? path === "/" : path.startsWith(n.href);
+            return (
+              <Link
+                key={n.href}
+                href={n.href}
+                className={`flex shrink-0 items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-medium transition ${
+                  active
+                    ? "bg-gold-500/15 text-gold-600"
+                    : "text-ink-700/70 hover:bg-sand-100"
+                }`}
+              >
+                <span className="text-base leading-none">{n.icon}</span>
+                <span>{n.label}</span>
+              </Link>
+            );
+          })}
+        </nav>
         <main className="flex-1 overflow-y-auto p-5 md:p-8">{children}</main>
       </div>
     </div>
