@@ -108,6 +108,53 @@ export const clients: Client[] = [
   { id: "c6", name: { en: "Fatima Al Mansoori", ar: "فاطمة المنصوري" }, type: "individual", emirate: { en: "Sharjah", ar: "الشارقة" }, matters: 1, since: "2024" },
 ];
 
+export type Invoice = {
+  id: string;
+  number: string;
+  client: Bi;
+  matterRef: string;
+  amount: number; // AED
+  issued: string;
+  due: string;
+  status: "paid" | "sent" | "overdue" | "draft";
+};
+
+export type TimeEntry = {
+  id: string;
+  date: string;
+  lawyer: Bi;
+  matterRef: string;
+  task: Bi;
+  hours: number;
+  rate: number; // AED / hour
+  billed: boolean;
+};
+
+export const invoices: Invoice[] = [
+  { id: "i1", number: "INV-2026-0088", client: { en: "Al Futtaim Group", ar: "مجموعة الفطيم" }, matterRef: "MZ-2024-0142", amount: 148500, issued: "2026-06-01", due: "2026-07-01", status: "overdue" },
+  { id: "i2", number: "INV-2026-0091", client: { en: "Al Habtoor Group", ar: "مجموعة الحبتور" }, matterRef: "MZ-2024-0151", amount: 262000, issued: "2026-06-10", due: "2026-07-10", status: "sent" },
+  { id: "i3", number: "INV-2026-0086", client: { en: "Emirates Steel Arkan", ar: "إمارات للحديد أركان" }, matterRef: "MZ-2024-0138", amount: 74000, issued: "2026-05-20", due: "2026-06-20", status: "paid" },
+  { id: "i4", number: "INV-2026-0093", client: { en: "Reem Investments LLC", ar: "ريم للاستثمار ذ.م.م" }, matterRef: "MZ-2024-0117", amount: 96500, issued: "2026-06-22", due: "2026-07-22", status: "sent" },
+  { id: "i5", number: "INV-2026-0095", client: { en: "Noor Bank PJSC", ar: "بنك نور ش.م.ع" }, matterRef: "MZ-2024-0129", amount: 41000, issued: "2026-06-25", due: "2026-07-25", status: "draft" },
+];
+
+export const timeEntries: TimeEntry[] = [
+  { id: "t1", date: "2026-07-01", lawyer: { en: "M. Khalifa", ar: "م. خليفة" }, matterRef: "MZ-2024-0142", task: { en: "Drafting rejoinder", ar: "صياغة مذكرة الرد" }, hours: 4.5, rate: 1800, billed: false },
+  { id: "t2", date: "2026-07-01", lawyer: { en: "S. Haddad", ar: "س. حداد" }, matterRef: "MZ-2024-0151", task: { en: "Arbitration hearing prep", ar: "تحضير جلسة التحكيم" }, hours: 6, rate: 2100, billed: false },
+  { id: "t3", date: "2026-06-30", lawyer: { en: "M. Khalifa", ar: "م. خليفة" }, matterRef: "MZ-2024-0129", task: { en: "Client consultation", ar: "استشارة العميل" }, hours: 1.5, rate: 1800, billed: false },
+  { id: "t4", date: "2026-06-30", lawyer: { en: "L. Nasser", ar: "ل. ناصر" }, matterRef: "MZ-2024-0117", task: { en: "ADGM fund documentation", ar: "توثيق صندوق سوق أبوظبي" }, hours: 3.2, rate: 1600, billed: true },
+  { id: "t5", date: "2026-06-29", lawyer: { en: "S. Haddad", ar: "س. حداد" }, matterRef: "MZ-2024-0138", task: { en: "Supply agreement review", ar: "مراجعة اتفاقية التوريد" }, hours: 2.8, rate: 2100, billed: true },
+];
+
+export const billingStats = {
+  billed: invoices.reduce((s, i) => s + i.amount, 0),
+  collected: invoices.filter((i) => i.status === "paid").reduce((s, i) => s + i.amount, 0),
+  outstanding: invoices
+    .filter((i) => i.status === "sent" || i.status === "overdue")
+    .reduce((s, i) => s + i.amount, 0),
+  unbilledHours: timeEntries.filter((t) => !t.billed).reduce((s, t) => s + t.hours, 0),
+};
+
 // A seed of the bilingual law library. In production this is a full,
 // continuously-updated corpus; here it is a representative sample used by
 // the Library page and the AI case-law search.
@@ -254,6 +301,222 @@ export const lawLibrary: Law[] = [
     summary: {
       en: "Kingdom-wide data-protection regime administered by SDAIA, with consent, breach-notification and localisation requirements.",
       ar: "نظام حماية بيانات على مستوى المملكة تشرف عليه سدايا، بمتطلبات الموافقة والإبلاغ عن الاختراقات والتوطين.",
+    },
+  },
+  {
+    id: "l13",
+    citation: "Federal Decree-Law No. 34 of 2021",
+    title: { en: "Combating Rumours & Cybercrime Law", ar: "قانون مكافحة الشائعات والجرائم الإلكترونية" },
+    jurisdiction: "UAE Federal",
+    category: { en: "Cybercrime", ar: "الجرائم الإلكترونية" },
+    year: 2021,
+    summary: {
+      en: "Criminalises online fraud, hacking, defamation and misuse of data. Article 6 addresses unauthorised system access; Article 43 covers online defamation.",
+      ar: "يجرّم الاحتيال الإلكتروني والاختراق والتشهير وإساءة استخدام البيانات. المادة ٦ تتناول الدخول غير المصرح به؛ والمادة ٤٣ تعالج التشهير الإلكتروني.",
+    },
+  },
+  {
+    id: "l14",
+    citation: "Federal Decree-Law No. 20 of 2018",
+    title: { en: "Anti-Money Laundering Law", ar: "قانون مواجهة غسل الأموال" },
+    jurisdiction: "UAE Federal",
+    category: { en: "Financial crime", ar: "الجرائم المالية" },
+    year: 2018,
+    summary: {
+      en: "AML/CFT framework: customer due diligence, suspicious-transaction reporting to the FIU, and beneficial-ownership obligations for entities.",
+      ar: "إطار مكافحة غسل الأموال وتمويل الإرهاب: العناية الواجبة تجاه العملاء والإبلاغ عن المعاملات المشبوهة ووحدة المعلومات المالية والتزامات المستفيد الحقيقي.",
+    },
+  },
+  {
+    id: "l15",
+    citation: "Federal Decree-Law No. 9 of 2016 (as amended)",
+    title: { en: "Bankruptcy Law", ar: "قانون الإفلاس" },
+    jurisdiction: "UAE Federal",
+    category: { en: "Insolvency", ar: "الإعسار" },
+    year: 2016,
+    summary: {
+      en: "Provides preventive composition, restructuring and bankruptcy procedures for onshore entities, decriminalising bounced-cheque scenarios tied to insolvency.",
+      ar: "يوفّر إجراءات الصلح الواقي وإعادة الهيكلة والإفلاس للكيانات، مع إزالة التجريم عن الشيكات المرتدة المرتبطة بالإعسار.",
+    },
+  },
+  {
+    id: "l16",
+    citation: "Federal Law No. 5 of 1985 (Civil Transactions Law)",
+    title: { en: "Civil Code", ar: "قانون المعاملات المدنية" },
+    jurisdiction: "UAE Federal",
+    category: { en: "Civil", ar: "المدني" },
+    year: 1985,
+    summary: {
+      en: "Foundational civil code governing contracts, obligations, tort/liability and property. Article 246 codifies the good-faith performance principle.",
+      ar: "القانون المدني الأساسي الحاكم للعقود والالتزامات والمسؤولية والملكية. المادة ٢٤٦ تقنّن مبدأ حسن النية في تنفيذ العقد.",
+    },
+  },
+  {
+    id: "l17",
+    citation: "Cabinet Decision No. 52 of 2017 (VAT Executive Regulations)",
+    title: { en: "VAT Executive Regulations", ar: "اللائحة التنفيذية لضريبة القيمة المضافة" },
+    jurisdiction: "UAE Federal",
+    category: { en: "Tax", ar: "الضرائب" },
+    year: 2017,
+    summary: {
+      en: "Implements the 5% VAT regime: registration thresholds, zero-rated and exempt supplies, input-tax recovery and invoicing requirements.",
+      ar: "تنفّذ نظام ضريبة القيمة المضافة بنسبة ٥٪: حدود التسجيل والتوريدات الخاضعة للصفر والمعفاة واسترداد ضريبة المدخلات ومتطلبات الفوترة.",
+    },
+  },
+  {
+    id: "l18",
+    citation: "Federal Decree-Law No. 26 of 2020",
+    title: { en: "Nationality & Passports (Investor Citizenship)", ar: "قانون الجنسية وجوازات السفر" },
+    jurisdiction: "UAE Federal",
+    category: { en: "Immigration", ar: "الهجرة" },
+    year: 2020,
+    summary: {
+      en: "Amendments enabling citizenship for qualified investors, professionals and talents, and clarifying dual-nationality provisions.",
+      ar: "تعديلات تتيح منح الجنسية للمستثمرين والمهنيين وأصحاب المواهب المؤهلين، وتوضّح أحكام ازدواج الجنسية.",
+    },
+  },
+  {
+    id: "l19",
+    citation: "Dubai Law No. 26 of 2007 (as amended by Law No. 33 of 2008)",
+    title: { en: "Dubai Tenancy Law", ar: "قانون إيجار العقارات في دبي" },
+    jurisdiction: "Dubai",
+    category: { en: "Real estate", ar: "العقارات" },
+    year: 2007,
+    summary: {
+      en: "Regulates landlord–tenant relations in Dubai: Ejari registration, rent-increase caps via the RERA index, and eviction notice periods.",
+      ar: "ينظّم علاقة المالك والمستأجر في دبي: تسجيل إيجاري وسقف الزيادة عبر مؤشر ريرا ومدد إشعار الإخلاء.",
+    },
+  },
+  {
+    id: "l20",
+    citation: "Dubai Law No. 6 of 2019 (Joint Property)",
+    title: { en: "Dubai Jointly Owned Property Law", ar: "قانون الملكية المشتركة في دبي" },
+    jurisdiction: "Dubai",
+    category: { en: "Real estate", ar: "العقارات" },
+    year: 2019,
+    summary: {
+      en: "Governs owners' associations, common-area management and service charges for jointly owned developments in Dubai.",
+      ar: "ينظّم جمعيات الملاك وإدارة المناطق المشتركة ورسوم الخدمة للمشاريع ذات الملكية المشتركة في دبي.",
+    },
+  },
+  {
+    id: "l21",
+    citation: "DIFC Law No. 5 of 2005 (as amended)",
+    title: { en: "DIFC Contract Law", ar: "قانون العقود بمركز دبي المالي" },
+    jurisdiction: "DIFC",
+    category: { en: "Contract", ar: "العقود" },
+    year: 2005,
+    summary: {
+      en: "Common-law contract regime for the DIFC: formation, interpretation, breach and remedies, drawing on English-law principles.",
+      ar: "نظام عقود مبني على القانون العام لمركز دبي المالي: الانعقاد والتفسير والإخلال والتعويضات، مستند إلى مبادئ القانون الإنجليزي.",
+    },
+  },
+  {
+    id: "l22",
+    citation: "DIFC Law No. 10 of 2018 (Insolvency Law)",
+    title: { en: "DIFC Insolvency Law", ar: "قانون الإعسار بمركز دبي المالي" },
+    jurisdiction: "DIFC",
+    category: { en: "Insolvency", ar: "الإعسار" },
+    year: 2018,
+    summary: {
+      en: "Rehabilitation and winding-up framework for DIFC entities, including an administration procedure and a rescue-focused moratorium.",
+      ar: "إطار إعادة التأهيل والتصفية لكيانات مركز دبي المالي، بما في ذلك إجراء الإدارة ووقف مؤقت يركّز على الإنقاذ.",
+    },
+  },
+  {
+    id: "l23",
+    citation: "ADGM Employment Regulations 2019 (as amended)",
+    title: { en: "ADGM Employment Regulations", ar: "لوائح العمل بسوق أبوظبي العالمي" },
+    jurisdiction: "ADGM",
+    category: { en: "Employment", ar: "العمل" },
+    year: 2019,
+    summary: {
+      en: "Employment framework for ADGM entities: end-of-service gratuity, working hours, leave entitlements and termination protections.",
+      ar: "إطار العمل لكيانات سوق أبوظبي: مكافأة نهاية الخدمة وساعات العمل والإجازات وحماية الإنهاء.",
+    },
+  },
+  {
+    id: "l24",
+    citation: "ADGM Data Protection Regulations 2021",
+    title: { en: "ADGM Data Protection Regulations", ar: "لوائح حماية البيانات بسوق أبوظبي" },
+    jurisdiction: "ADGM",
+    category: { en: "Data protection", ar: "حماية البيانات" },
+    year: 2021,
+    summary: {
+      en: "GDPR-aligned data-protection regime for ADGM with an independent Commissioner, DPIA duties and international transfer controls.",
+      ar: "نظام حماية بيانات متوافق مع اللائحة الأوروبية لسوق أبوظبي بمفوّض مستقل وواجبات تقييم الأثر وضوابط النقل الدولي.",
+    },
+  },
+  {
+    id: "l25",
+    citation: "Federal Decree-Law No. 37 of 2021",
+    title: { en: "Trademarks Law", ar: "قانون العلامات التجارية" },
+    jurisdiction: "UAE Federal",
+    category: { en: "Intellectual property", ar: "الملكية الفكرية" },
+    year: 2021,
+    summary: {
+      en: "Modernised trademark regime aligned with GCC Trademark Law: registration, opposition, well-known marks and enforcement remedies.",
+      ar: "نظام علامات محدّث متوافق مع قانون العلامات الخليجي: التسجيل والاعتراض والعلامات المشهورة ووسائل الإنفاذ.",
+    },
+  },
+  {
+    id: "l26",
+    citation: "Federal Decree-Law No. 38 of 2021",
+    title: { en: "Copyright & Neighbouring Rights Law", ar: "قانون حق المؤلف والحقوق المجاورة" },
+    jurisdiction: "UAE Federal",
+    category: { en: "Intellectual property", ar: "الملكية الفكرية" },
+    year: 2021,
+    summary: {
+      en: "Protects literary, artistic and software works; sets author moral and economic rights, terms of protection and infringement penalties.",
+      ar: "يحمي الأعمال الأدبية والفنية والبرمجيات؛ ويحدّد الحقوق الأدبية والمادية للمؤلف ومدد الحماية وعقوبات الاعتداء.",
+    },
+  },
+  {
+    id: "l27",
+    citation: "Federal Decree-Law No. 14 of 2023",
+    title: { en: "Financial Restructuring & Bankruptcy Law", ar: "قانون إعادة التنظيم المالي والإفلاس" },
+    jurisdiction: "UAE Federal",
+    category: { en: "Insolvency", ar: "الإعسار" },
+    year: 2023,
+    summary: {
+      en: "New insolvency regime establishing a dedicated Bankruptcy Court and clearer preventive-settlement and restructuring procedures.",
+      ar: "نظام إعسار جديد ينشئ محكمة إفلاس مختصة وإجراءات أوضح للصلح الوقائي وإعادة الهيكلة.",
+    },
+  },
+  {
+    id: "l28",
+    citation: "KSA Companies Law (Royal Decree M/132 of 2022)",
+    title: { en: "Saudi Companies Law", ar: "نظام الشركات السعودي" },
+    jurisdiction: "KSA",
+    category: { en: "Corporate", ar: "الشركات" },
+    year: 2022,
+    summary: {
+      en: "Overhauled Saudi corporate framework introducing the simplified joint-stock company and modernised governance and capital rules.",
+      ar: "نظام شركات سعودي مُحدَّث يستحدث شركة المساهمة المبسّطة ويطوّر قواعد الحوكمة ورأس المال.",
+    },
+  },
+  {
+    id: "l29",
+    citation: "KSA Labor Law (Royal Decree M/51, amended 2024)",
+    title: { en: "Saudi Labor Law", ar: "نظام العمل السعودي" },
+    jurisdiction: "KSA",
+    category: { en: "Employment", ar: "العمل" },
+    year: 2024,
+    summary: {
+      en: "Governs private-sector employment in the Kingdom: contracts, Saudisation (Nitaqat) interplay, end-of-service awards and termination.",
+      ar: "ينظّم العمل في القطاع الخاص بالمملكة: العقود وتقاطع السعودة (نطاقات) ومكافأة نهاية الخدمة والإنهاء.",
+    },
+  },
+  {
+    id: "l30",
+    citation: "GCC Common Customs Law",
+    title: { en: "GCC Common Customs Law", ar: "قانون الجمارك الموحّد لدول الخليج" },
+    jurisdiction: "GCC",
+    category: { en: "Trade", ar: "التجارة" },
+    year: 2003,
+    summary: {
+      en: "Unified customs code across GCC states: a common external tariff, single point of entry principle and harmonised clearance procedures.",
+      ar: "قانون جمركي موحّد بين دول مجلس التعاون: تعريفة خارجية موحّدة ومبدأ المنفذ الواحد وإجراءات تخليص منسّقة.",
     },
   },
 ];

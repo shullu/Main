@@ -15,6 +15,8 @@ and TypeScript.
   fees, and an AI daily brief.
 - **Matters** — case list with client, jurisdiction, value, next hearing, status.
 - **Clients** — corporate and individual client cards.
+- **Billing & Time** — billable-hour tracking, invoices (paid / sent / overdue /
+  draft) and collection metrics.
 
 **AI features (powered by Claude — `claude-opus-4-8`)**
 - **AI Legal Assistant** — a jurisdiction-aware chatbot for UAE / DIFC / ADGM /
@@ -57,6 +59,22 @@ cp .env.example .env.local
   production the law library is a continuously-updated, full corpus.
 - AI output is research assistance, not legal advice — always verify against
   primary sources.
+
+## Deploying
+
+The app is a standard Next.js 14 project and deploys to any Node host.
+
+**Vercel (recommended, one-click):** import the repo at
+[vercel.com/new](https://vercel.com/new), add the `ANTHROPIC_API_KEY`
+environment variable (optional — the app runs without it), and deploy.
+
+**Any Node host:**
+
+```bash
+npm install
+npm run build
+npm run start        # serves on port 3000
+```
 
 ## Tech
 

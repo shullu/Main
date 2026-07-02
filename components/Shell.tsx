@@ -43,6 +43,7 @@ export function Shell({ children }: { children: ReactNode }) {
     { href: "/drafting", label: t.nav.drafting, icon: "✎" },
     { href: "/caselaw", label: t.nav.caselaw, icon: "🔎" },
     { href: "/library", label: t.nav.library, icon: "📚" },
+    { href: "/billing", label: t.nav.billing, icon: "﷼" },
     { href: "/leads", label: t.nav.leads, icon: "⇲" },
   ];
 
