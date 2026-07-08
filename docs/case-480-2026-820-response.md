@@ -58,19 +58,23 @@ Dear Sirs,
 
     Mr. Kirchfeld is named as a respondent in his personal capacity.
 
-2.4 *Materials not yet available.* The following do not presently appear on the
-    court portal and are not yet in our possession:
+2.4 *The originating document.* We should address directly the insurer's request
+    for a separate underlying "petition" or statement of claim, as distinct from
+    the court summary. In a proceeding of this kind, the application for the
+    appointment of an expert is itself the originating document: it is not a
+    precursor to some further, fuller pleading that is awaited. There is
+    accordingly no separate petition or statement of claim to be disclosed. The
+    substance of what is being alleged, and what is sought, is contained in the
+    expert-appointment application and its accompanying evidentiary bundle — the
+    reimbursement requests, invoices, correspondence and financial records
+    described above — together with the terms of the expert mandate itself. Those
+    are the operative documents, and they are the materials we have provided. A
+    translation of the key documents is in hand and will follow.
 
-    (a) the originating Arabic petition / statement of claim in full;
-
-    (b) the complete filed pleadings and any subsequent submissions;
-
-    (c) detailed hearing minutes.
-
-    We note that the insurer has specifically requested the underlying petition,
-    as distinct from the court summary. We are monitoring the portal and will
-    provide these documents promptly upon their becoming available, together
-    with a translation of the substantive materials, which is in hand.
+2.5 *Other materials.* Certain ancillary items — for example, detailed hearing
+    minutes of any procedural sessions — may not yet appear on the portal as the
+    matter progresses. We continue to monitor the system and will provide any
+    further documents as and when they become available.
 
 3. **Language of the file**
 
@@ -89,15 +93,17 @@ Dear Sirs,
     the expert being mandated to determine whether funds were improperly
     obtained.
 
-4.2 *Whether a monetary claim is presently asserted.* On the materials available
-    to us, the proceeding is at the expert-appointment / forensic stage. We have
-    not identified, in the documents presently accessible, a quantified monetary
-    claim asserted against Mr. Kirchfeld personally. We qualify that observation
-    by reference to paragraph 2.4 above: the full petition is not yet available,
-    and our assessment is necessarily subject to review once it is disclosed.
-    Under Dubai procedure, findings from an expert phase of this kind are
-    commonly relied upon to found, or to quantify, a subsequent substantive
-    claim.
+4.2 *Whether a monetary claim is presently asserted.* The proceeding is at the
+    expert-appointment / forensic stage. As explained at paragraph 2.4, the
+    expert-appointment application is the originating document; it does not
+    contain, and there is no separate pleading asserting, a quantified monetary
+    claim against Mr. Kirchfeld personally at this stage. The present object of
+    the applicants is the determination of the matters within the expert's
+    mandate — the authenticity and regularity of the reimbursement documentation
+    — rather than the recovery of a stated sum. Under Dubai procedure, findings
+    from an expert phase of this kind are commonly relied upon to found, or to
+    quantify, a subsequent substantive claim, and it is prudent to proceed on the
+    footing that they may be so used here.
 
 4.3 *The parties.* As reflected in the court record, the parties are:
 
@@ -139,8 +145,7 @@ Dear Sirs,
     and forensic phase addressing that same matrix through a structured expert
     process of document verification, transaction analysis and source
     confirmation, the findings of which may be relied upon in related or
-    subsequent proceedings. We will confirm the precise interrelationship once
-    the full petition is available.
+    subsequent proceedings.
 
 5. **Basis of the proposed fees**
 
@@ -148,9 +153,10 @@ Dear Sirs,
     Mr. Kirchfeld's position as a named respondent in an active, court-directed
     expert process. That work comprises, in outline:
 
-    (a) review and analysis of the case file and supporting documents
-        (reimbursement requests, invoices, correspondence and financial records),
-        and of the petition and exhibits once disclosed;
+    (a) review and analysis of the case file and supporting documents — the
+        expert-appointment application, the reimbursement requests, invoices,
+        correspondence and financial records — including any further materials
+        entering the file as the matter progresses;
 
     (b) engagement with the court-appointed expert, including responding to
         requests for information and to expert queries;
@@ -196,9 +202,10 @@ Dear Sirs,
     (c) the proceeding is evidentially significant and warrants active legal
         representation at this stage.
 
-7.2 We trust the above addresses the queries raised. We should be glad to provide
-    the originating petition and translation as soon as they are available, and
-    to confirm next steps at the insurer's convenience.
+7.2 We trust the above addresses the queries raised, including the position on
+    the originating document explained at paragraph 2.4. We shall provide the
+    translation of the key materials shortly, and should be glad to confirm next
+    steps at the insurer's convenience.
 
 Yours faithfully,
 
