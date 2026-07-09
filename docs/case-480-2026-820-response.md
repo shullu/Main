@@ -324,6 +324,10 @@ Client Success Manager
 For and on behalf of
 NOURA ALMAAZMI ADVOCATES & LEGAL CONSULTANCY
 
+*Reviewed and approved by: ________________________, Advocate (Noura Almaazmi
+Advocates & Legal Consultancy) — the procedural and coverage analysis at
+sections 4 and 6 is issued under the supervision of the responsible advocate.*
+
 Tel: +971 4 241 3555 | Mob: +971 52 450 1969
 Email: dina.k@almaazmilawyers.com | Web: www.almaazmilawyers.com
 
