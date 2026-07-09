@@ -147,7 +147,7 @@ Dear Sirs,
     confirmation, the findings of which may be relied upon in related or
     subsequent proceedings.
 
-5. **Basis of the proposed fees**
+5. **Basis of the proposed fees and the engagement of experts**
 
 5.1 The proposed fees reflect the scope of work required to protect
     Mr. Kirchfeld's position as a named respondent in an active, court-directed
@@ -171,26 +171,131 @@ Dear Sirs,
     (f) management, translation and coordination of Arabic-language court
         materials.
 
-5.2 This proceeding requires substantive engagement at an early stage, precisely
-    because the expert's findings are liable to form the evidential foundation
-    for any subsequent step in the matter. That distinguishes it from the earlier
-    civil proceedings, in which a substantial body of documents, legal argument
-    and factual work — largely developed in the context of the criminal
-    proceedings — was already available and could be reused, with a corresponding
-    reduction in cost. The present matter calls for separate review and handling
-    within a new expert process, and the proposed fees are calibrated
-    accordingly.
+5.2 *The central importance of expert handling.* The defining feature of this
+    proceeding is that its outcome will be driven not by legal submission alone
+    but by the findings of a court-appointed forensic expert. In the Dubai
+    Courts, the expert's report carries substantial evidential weight and, in
+    practice, frequently determines the factual matrix on which any subsequent
+    liability is assessed. The single most consequential item of defence work is
+    therefore the proper handling of, and engagement with, that expert. An
+    unanswered or unchallenged expert report is liable to harden into an adverse
+    factual finding that is difficult and costly to displace later — with a
+    corresponding increase in the insurer's ultimate exposure. Cost incurred now,
+    in engaging with the expert, is thus not discretionary: it is the point at
+    which the matter is most efficiently and effectively defended.
 
-6. **Timing of notification**
+5.3 *Engagement of dedicated expert support.* For that reason, Mr. Kirchfeld's
+    defence will be conducted with the support of dedicated forensic and
+    document-examination specialists retained for this matter — including
+    in-house forensic-accounting and technical resource deployed alongside the
+    legal team. The role of that specialist support is to:
 
-6.1 We confirm that, on our understanding, the timing of notification to
+    (a) independently examine the 32 reimbursement requests, the underlying
+        invoices and retail transaction documentation, the associated email
+        correspondence and the payment records, and test the authenticity,
+        provenance and internal consistency of each;
+
+    (b) reconstruct the reimbursement and approval trail within the relevant
+        GMS-related entities, so that each transaction can be explained against
+        the contemporaneous process rather than in isolation;
+
+    (c) prepare technical analyses, schedules and source confirmations capable of
+        being placed before the court-appointed expert, and of anticipating and
+        answering the questions the expert is mandated to address;
+
+    (d) critically review any methodology, working papers and findings produced
+        by the court-appointed expert, and identify any error, omission,
+        unsupported inference or mischaracterisation for correction; and
+
+    (e) support the preparation of a substantive response to the expert's report,
+        and any observations or objections to be filed.
+
+5.4 *Why this is the reasonable and cost-effective course.* Conducting the expert
+    phase with dedicated specialist support is not an inflation of cost but a
+    control on it. It ensures that the expert works from a complete and correctly
+    understood record; it reduces the risk of an adverse report founded on
+    incomplete material; and it front-loads the work at the stage where it has
+    greatest effect and lowest cost, rather than deferring it to the far more
+    expensive task of dislodging concluded findings in later, substantive
+    proceedings. Deploying forensic resource in-house, alongside the legal team,
+    is itself a cost-efficiency: it avoids duplicative external retainers, keeps
+    the technical and legal workstreams integrated, and ensures continuity of
+    knowledge across the matter.
+
+5.5 *Comparison with the earlier civil matter.* This scope distinguishes the
+    present matter from the earlier civil proceedings, in which a substantial
+    body of documents, legal argument and factual work — largely developed in the
+    criminal proceedings — was already available and could be reused, with a
+    correspondingly lower fee. The present matter requires separate review and
+    handling within a new, forensic, expert-led process, and the proposed fees
+    are calibrated to that scope. They are, in our assessment, reasonable,
+    necessary and proportionate to the amounts and interests at stake, and to the
+    consequences that turn on the expert's findings.
+
+6. **Coverage position**
+
+6.1 We set out below, for the insurer's assistance, why we consider the defence
+    costs of this proceeding — including the expert-handling work described in
+    section 5 — fall to be met under a directors' and officers' liability policy
+    of the ordinary kind, and why a declinature would not, in our respectful
+    view, be well-founded. We address the position in principle; we do not have
+    the policy wording before us, and this letter is without prejudice to the
+    precise terms, which govern.
+
+6.2 *A Claim against an Insured Person.* The proceeding names Mr. Kirchfeld
+    personally as a respondent and concerns conduct said to have arisen in the
+    discharge of his functions as an officer of the GMS group. It is therefore a
+    claim against an insured person in an insured capacity, in respect of an
+    alleged wrongful act of the kind such policies are written to answer. A
+    court-directed forensic examination that names the insured and seeks to
+    determine whether he acted improperly is, on any ordinary reading, both a
+    "Claim" and an "Investigation" within the cover, and the associated defence
+    and investigation costs are the very costs the policy exists to fund.
+
+6.3 *No conduct exclusion is engaged.* Policies of this nature exclude
+    liability for fraud, dishonesty or the obtaining of improper personal profit
+    only where such conduct has been established by a final, non-appealable
+    adjudication. There has been no such adjudication. To the contrary, the whole
+    purpose of the present proceeding is to investigate — not to establish —
+    whether any irregularity occurred; the allegations remain unproven and
+    Mr. Kirchfeld is entitled to the presumption of innocence. The conduct
+    exclusion is therefore not engaged, and on the standard terms the insurer is
+    obliged to advance defence costs as they are incurred, subject only to any
+    contractual right of recoupment should improper conduct later be finally
+    adjudicated. Declining cover now, on the basis of allegations that are the
+    very subject of the investigation, would pre-judge the outcome the process
+    exists to determine.
+
+6.4 *Notification and co-operation.* Notice was given promptly once the case
+    information became available (section 7 below). Mr. Kirchfeld has co-operated
+    and will continue to co-operate fully with the insurer, including as to the
+    scope and conduct of the defence and the reasonableness of costs. We are
+    ready to agree an appropriate reporting and cost-control protocol.
+
+6.5 *The insurer's own interest.* Advancing the cost of proper expert handling
+    now is aligned with the insurer's interest as well as the insured's. The
+    expert's findings will shape the exposure that the insurer may ultimately be
+    called upon to meet. Under-resourcing the defence at this stage — or delaying
+    approval while the expert proceeds — risks an adverse report crystallising
+    unchallenged, and a materially larger liability later. Timely approval is
+    therefore the course most consistent with the insurer's duty to act in the
+    insured's interest and with the mitigation of its own exposure.
+
+6.6 We would accordingly invite the insurer to confirm cover and cost approval so
+    that the defence, and in particular the expert-handling work, can proceed
+    without prejudicial delay. We are glad to provide any further information the
+    insurer reasonably requires for that purpose.
+
+7. **Timing of notification**
+
+7.1 We confirm that, on our understanding, the timing of notification to
     Mr. Kirchfeld was affected by technical and access limitations within the
     Dubai Courts electronic portal. The matter was communicated to him promptly
     once sufficient case information became available to us through that system.
 
-7. **Summary**
+8. **Summary**
 
-7.1 In short:
+8.1 In short:
 
     (a) Mr. Kirchfeld is named, in his personal capacity, as a respondent in an
         active Dubai Courts proceeding;
@@ -199,13 +304,18 @@ Dear Sirs,
         transactions attributed to him, to determine whether funds were
         improperly obtained; and
 
-    (c) the proceeding is evidentially significant and warrants active legal
-        representation at this stage.
+    (c) the proceeding is evidentially significant, turns on the findings of a
+        court-appointed forensic expert, and warrants active legal
+        representation — with dedicated expert support — at this stage; and
 
-7.2 We trust the above addresses the queries raised, including the position on
+    (d) the defence costs, including that expert-handling work, fall to be met
+        under a D&O policy of the ordinary kind, no conduct exclusion being
+        engaged in the absence of any final adjudication.
+
+8.2 We trust the above addresses the queries raised, including the position on
     the originating document explained at paragraph 2.4. We shall provide the
-    translation of the key materials shortly, and should be glad to confirm next
-    steps at the insurer's convenience.
+    translation of the key materials shortly, and should be glad to confirm cover
+    and next steps at the insurer's convenience.
 
 Yours faithfully,
 
